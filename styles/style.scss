@@ -43,7 +43,7 @@ nav {
 }
 
 .header-img {
-    height: 30vh;
+    height: 40vh;
     background-image: url(../img/plane.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -55,12 +55,12 @@ nav {
 main {
     display: block;
     background-color: white;
-    height: 50vh;
+    height: 30vh;
     padding: 5px;
     background-color: rgb(245, 245, 245);
 }
 
-form {
+.main-form {
     display: block;
     border: 2px solid black;
     background-color: rgb(245, 245, 245);
@@ -114,4 +114,54 @@ label {
         display: inline-block;
         width: 15%;
     }
+}
+
+// Login panel
+
+.log-panel {
+    width: 30vw;
+    height: 30vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    font: 16px arial;
+
+    .log-panel-form {
+        margin: 0;
+
+        .log-panel-label {
+            display: block;
+            width: 100%;
+            padding: 15px 0;
+            color: grey;
+            font-size: 16px;
+            font-family: arial;
+        }
+
+        #username,
+        #password {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 0px;
+            border: 1px solid silver;
+            font-size: 22px;
+        }
+
+        .login-button {
+            width: 30%;
+            margin-top: 10px;
+            padding: 10px 0;
+            text-align: center;
+            border: 2px solid black;
+            font-size: 15px;
+            background-color: yellowgreen;
+        }
+    }
+
+
+
+
 }
