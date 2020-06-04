@@ -46,17 +46,17 @@
             </div>
             <div class="booker-row-2">
                 <div class="row-2-column-1">
-                    <div class="booker-half">
-                        <label for="">
+                    <div class="booker-half departure-date">
+                        <label for="departureDate">
                             <span>Data wylotu</span>
                         </label>
                         <input id="departureDate" type="date">
                     </div>
                     <div class="booker-half return-date">
-                        <label for="">
+                        <label for="returnDate">
                             <span>Data powrotu</span>
                         </label>
-                        <input id="departureDate" type="date">
+                        <input id="returnDate" type="date">
                     </div>
                 </div>
                 <div class="row-2-column-2">
@@ -82,6 +82,7 @@
                 </div>
             </div>
         </form>
+        <div id="backdrop"></div>
         <div class="log-panel">
             <form action="" class="log-panel-form">
                 <label class="log-panel-label" for="username">Nazwa użytkownika</label>
@@ -89,6 +90,7 @@
                 <label class="log-panel-label" for="password">Hasło:</label>
                 <input type="password" id="password">
                 <button class="login-button" type="submit">Zaloguj</button>
+                <button class="cancel-button" type="submit">Anuluj</button>
             </form>
         </div>
     </main>

@@ -7,6 +7,7 @@
 body {
     max-width: 1240px;
     margin: 0 auto;
+    height: 100vh;
 }
 
 // Header
@@ -40,6 +41,8 @@ nav {
     border: 2px solid white;
     margin-left: 75%;
     font-size: 15px;
+
+
 }
 
 .header-img {
@@ -57,7 +60,6 @@ main {
     background-color: white;
     height: 30vh;
     padding: 5px;
-    background-color: rgb(245, 245, 245);
 }
 
 .main-form {
@@ -117,16 +119,35 @@ label {
 }
 
 // Login panel
+#backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    pointer-events: none;
+    display: none;
+}
+
+#backdrop.visible {
+    display: block;
+    pointer-events: all;
+}
 
 .log-panel {
+    position: fixed;
+    z-index: 100;
     width: 30vw;
     height: 30vh;
-    margin: 0 auto;
+    top: 30vh;
+    left: 35vw;
     padding: 20px;
     background-color: white;
     border: 1px solid black;
-    position: relative;
     font: 16px arial;
+    display: none;
 
     .log-panel-form {
         margin: 0;
@@ -161,7 +182,113 @@ label {
         }
     }
 
+    .log-panel.visible {
+        display: block;
+        animation: fade-slide-in 0.3s ease-out forwards;
+    }
+}
 
+// Booking main page
 
+.header-menu {
+    display: block;
+    padding: 10px;
+    background-color: silver;
+    color: black;
+    border: 2px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.active {
+    background-color: yellowgreen;
+    color: white;
+}
+
+.main-section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 10px;
+    // display: none;
+}
+
+.visible {
+    display: block;
+}
+
+// confirm button
+
+.confirm-btn {
+    width: 10%;
+    padding: 5px 0;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 16px;
+    background-color: yellowgreen;
+}
+
+//flights 
+#flights-main {
+    display: block;
+}
+
+.flights-row {
+    padding: 10px;
+}
+
+//passengers
+#passengers-main {
+    display: none;
+}
+
+.passengers-row {
+    padding: 10px;
+}
+
+.passengers-form {
+    border: 1px solid silver;
+    padding: 10px;
+}
+
+//seats
+
+.seats-col {
+    padding: 10px;
+    border: 1px solid silver;
+    width: 49%;
+    display: inline-block;
+}
+
+//packets
+
+.packets-row {
+    padding: 10px;
+}
+
+.packets-col {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+//luggage
+
+.luggage-row {
+    padding: 10px;
+}
+
+.luggage-col {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+//summary
+
+.summary-row {
+    padding: 10px;
+}
+
+.summary-col {
+    display: inline-block;
 }

@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        "index": "./scripts/script.js",
+        app: "./scripts/script.js"
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -16,13 +16,15 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: "index.html",
             template: "./scripts/index.html",
         }),
         new HtmlWebpackPlugin({
+            filename: "booking.html",
             template: "./scripts/booking.html",
             inject: true,
-            chunks: ["index"],
-            filename: "booking.html"
+            chunks: ["app"],
+
         }),
     ],
     module: {

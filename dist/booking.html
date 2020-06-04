@@ -22,10 +22,178 @@
         <section class="header-img"></section>
     </header>
     <main>
-
+        <div id="flights">
+            <div id="flights-header" class="header-menu active">
+                <h3>Twój lot</h3>
+            </div>
+            <div id="flights-main" class="main-section">
+                <div id="flights-row-1" class="flights-row">
+                    <div class="flights-row-1-col-1">
+                        <span>Z</span>
+                        <span id="departure" class="flights-depart">Katowice (KTW)</span>
+                    </div>
+                    <div class="flights-row-1-col-2">
+                        <span>do</span>
+                        <span id="destination" class="flights-dest">Lotnisko docelowe</span>
+                    </div>
+                </div>
+                <div id="flights-row-2" class="flights-row">
+                    <span>data</span>
+                </div>
+                <div id="flights-row-3" class="flights-row">
+                    <span>godzina</span>
+                </div>
+                <div id="flights-row-4" class="flights-row">
+                    <span>cena</span>
+                </div>
+                <div id="flights-row-5" class="flights-row">
+                    <button type="submit" id="flights-confirm" class="confirm-btn">Dalej</button>
+                </div>
+            </div>
+        </div>
+        <div id="passengers">
+            <div id="passengers-header" class="header-menu">
+                <h3>Paseżerowie</h3>
+            </div>
+            <div id="passengers-main" class="main-section">
+                <div id="passengers-row-1" class="passengers-row">
+                    <form action="" class="passengers-form">
+                        <label for="">Pasażer 1</label>
+                        <select>
+                            <option value="">Wybierz tytuł</option>
+                            <option value="">Pan</option>
+                            <option value="">Pani</option>
+                        </select>
+                        <input type="text" placeholder="Imię">
+                        <input type="text" placeholder="Nazwisko">
+                    </form>
+                </div>
+                <div id="passengers-row-2" class="passengers-row">
+                    <button type="submit" class="confirm-btn">Dalej</button>
+                </div>
+            </div>
+        </div>
+        <div id="seats">
+            <div id="seats-header" class="header-menu">
+                <h3>Miejsca</h3>
+            </div>
+            <div id="seats-main" class="main-section">
+                <div id="seats-col-1" class="seats-col">
+                    <div class="seats-table">
+                        <span>Wybrane miejsce</span>
+                        <span>Numer miejsca</span>
+                        <button type="submit" class="confirm-btn">Dalej</button>
+                    </div>
+                </div>
+                <div id="seats-col-2" class="seats-col"></div>
+            </div>
+        </div>
+        <div id="packets">
+            <div id="packets-header" class="header-menu">
+                <h3>Pakiety</h3>
+            </div>
+            <div id="packets-main" class="main-section">
+                <div id="packets-row-1" class="packets-row">
+                    <div id="packets-row-1-col-1" class="packets-col">
+                        <div id="packet-premium">
+                            Pakiet 1
+                        </div>
+                    </div>
+                    <div id="packets-row-1-col-2" class="packets-col">
+                        <div id="packet-standard">
+                            Pakiet 2
+                        </div>
+                    </div>
+                </div>
+                <div id="packets-row-2" class="packets-row">
+                    <button type="submit" class="confirm-btn">Dalej</button>
+                </div>
+            </div>
+        </div>
+        <div id="luggage">
+            <div id="luggage-header" class="header-menu">
+                <h3>Bagaż</h3>
+            </div>
+            <div id="luggage-main" class="main-section">
+                <div id="luggage-row-1" class="luggage-row">
+                    <span>Bagaż rejestrowany</span>
+                </div>
+                <div id="luggage-row-2" class="luggage-row">
+                    <div id="luggage-row-2-col-1" class="luggage-col">
+                        <span>10kg</span>
+                    </div>
+                    <div id="luggage-row-2-col-2" class="luggage-col">
+                        <span>20kg</span>
+                    </div>
+                    <div id="luggage-row-2-col-3" class="luggage-col">
+                        <span>32kg</span>
+                    </div>
+                    <div id="luggage-row-2-col-4" class="luggage-col">
+                        <span>Tylko bagaż podręczny</span>
+                    </div>
+                </div>
+                <div id="luggage-row-3" class="luggage-row">
+                    <button type="submit" class="confirm-btn">Dalej</button>
+                </div>
+            </div>
+        </div>
+        <div id="summary">
+            <div id="summary-header" class="header-menu">
+                <h3>Podsumowanie</h3>
+            </div>
+            <div id="summary-main" class="main-section">
+                <div id="summary-row-1" class="summary-row">
+                    <div id="summary-row-1-col-1" class="summary-col">
+                        <span id="departure">Katowice (KTW)</span>
+                    </div>
+                    <div id="summary-row-1-col-2" class="summary-col">
+                        <span id="destination">Lotnisko docelowe</span>
+                    </div>
+                </div>
+                <div id="summary-row-2" class="summary-row">
+                    <div id="summary-row-2-col-1" class="summary-col">
+                        <span>data</span>
+                    </div>
+                    <div id="summary-row-2-col-2" class="summary-col">
+                        <span>godzina</span>
+                    </div>
+                </div>
+                <div id="summary-row-3" class="summary-row">
+                    <div id="summary-row-3-col-1" class="summary-col">
+                        <span>Paseżerowie</span>
+                    </div>
+                    <div id="summary-row-3-col-2" class="summary-col">
+                        <span>Miejsce</span>
+                    </div>
+                </div>
+                <div id="summary-row-4" class="summary-row">
+                    <span>Pakiet</span>
+                </div>
+                <div id="summary-row-5" class="summary-row">
+                    <span>Bagaż</span>
+                </div>
+                <div id="summary-row-6" class="summary-row">
+                    <span>cena</span>
+                </div>
+                <div id="summary-row-7" class="summary-row">
+                    <button type="submit" class="confirm-btn">Płatność</button>
+                </div>
+            </div>
+        </div>
+        <div id="backdrop"></div>
+        <div class="log-panel">
+            <form action="" class="log-panel-form">
+                <label class="log-panel-label" for="username">Nazwa użytkownika</label>
+                <input type="text" id="username">
+                <label class="log-panel-label" for="password">Hasło:</label>
+                <input type="password" id="password">
+                <button class="login-button" type="submit">Zaloguj</button>
+                <button class="cancel-button" type="submit">Anuluj</button>
+            </form>
+        </div>
     </main>
     <footer></footer>
-    <script src="script.js"></script>
+
 <script type="text/javascript" src="bundle.js"></script></body>
 
 </html>
