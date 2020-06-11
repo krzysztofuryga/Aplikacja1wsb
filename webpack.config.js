@@ -3,11 +3,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: {
-        app: "./scripts/script.js"
+        main: "./scripts/script.js",
+        booking: "./scripts/booking.js"
     },
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
+        filename: "[name].bundle.js"
     },
     devServer: {
         contentBase: path.join(__dirname, "dist"),
@@ -23,7 +24,7 @@ module.exports = {
             filename: "booking.html",
             template: "./scripts/booking.html",
             inject: true,
-            chunks: ["app"],
+            chunks: ["booking"],
 
         }),
     ],

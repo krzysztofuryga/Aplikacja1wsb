@@ -28,8 +28,8 @@
                     <label for="">
                         <span>Z</span>
                     </label>
-                    <select name="departureAirport" id="">
-                        <option value="">Katowice (KTW)</option>
+                    <select name="departureAirport" id="departureAirport">
+                        <option value="Katowice (KTW)">Katowice (KTW)</option>
                     </select>
                 </div>
                 <div class="row-1-column-2">
@@ -37,10 +37,10 @@
                         <span>Do</span>
                     </label>
                     <select name="destinationAirport" id="destinationAirport">
-                        <option value="">Wybierz lotnisko przylotu</option>
-                        <option value="">Gdańsk (GDN)</option>
-                        <option value="">Paryż (CDG)</option>
-                        <option value="">Nowy Jork (JFK)</option>
+                        <option value="Wybierz lotnisko przylotu">Wybierz lotnisko przylotu</option>
+                        <option value="Gdańsk (GDN)">Gdańsk (GDN)</option>
+                        <option value="Paryż (CDG">Paryż (CDG)</option>
+                        <option value="Nowy Jork (JFK)">Nowy Jork (JFK)</option>
                     </select>
                 </div>
             </div>
@@ -63,22 +63,20 @@
                     <label for="">
                         <span>Liczba pasażerów</span>
                     </label>
-                    <select name="" id="">
-                        <option value="">1 pasażer</option>
-                        <option value="">2 pasażerów</option>
-                        <option value="">3 pasażerów</option>
-                        <option value="">4 pasażerów</option>
-                        <option value="">5 pasażerów</option>
-                        <option value="">6 pasażerów</option>
-                        <option value="">7 pasażerów</option>
-                        <option value="">8 pasażerów</option>
-                        <option value="">9 pasażerów</option>
+                    <select name="passengers" id="passengersNumber">
+                        <option value="1 pasażer">1 pasażer</option>
+                        <option value="2 pasażerów">2 pasażerów</option>
+                        <option value="3 pasażerów">3 pasażerów</option>
+                        <option value="4 pasażerów">4 pasażerów</option>
+                        <option value="5 pasażerów">5 pasażerów</option>
+                        <option value="6 pasażerów">6 pasażerów</option>
+                        <option value="7 pasażerów">7 pasażerów</option>
+                        <option value="8 pasażerów">8 pasażerów</option>
+                        <option value="9 pasażerów">9 pasażerów</option>
                     </select>
                 </div>
                 <div class="row-2-column-3 submit-btn">
-                    <button class="search-button" type="submit">
-                        <span>Szukaj</span>
-                    </button>
+                    <input type="button" value="Szukaj" class="search-button" onclick="searchFlight()">
                 </div>
             </div>
         </form>
@@ -95,6 +93,6 @@
         </div>
     </main>
     <footer></footer>
-<script type="text/javascript" src="bundle.js"></script></body>
+<script type="text/javascript" src="main.bundle.js"></script><script type="text/javascript" src="booking.bundle.js"></script></body>
 
 </html>
